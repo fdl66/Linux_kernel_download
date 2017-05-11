@@ -5,6 +5,7 @@ import requests
 import threading
 import re
 
+#请填写你自己的下载保存路径
 DOWNLOAD_DIR="/home/kernel/"
 
 url='https://www.kernel.org/pub/linux/kernel/'
