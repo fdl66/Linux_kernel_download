@@ -2,11 +2,15 @@
 # coding=utf-8
 
 import requests
+import threading
 import re
 
 DOWNLOAD_DIR="/home/kernel/"
 
 url='https://www.kernel.org/pub/linux/kernel/'
+versiontest=[
+    "v1.0/",
+]
 version=[
     "v1.0/",
     "v1.1/",
@@ -56,7 +60,9 @@ def check_url2():
 
 def start_download():
     for item in url2:
-        download(url2)
+        print item
+        download(item)
+
 
 def main():
     gener_url1()
